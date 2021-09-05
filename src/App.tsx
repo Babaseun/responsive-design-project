@@ -1,12 +1,17 @@
 import Nav from "./components/Nav/Nav";
+import ProductList from "./components/ProductList/ProductList";
+import Banner from "./components/Banner/Banner";
 
 import "./App.scss";
-import Body from "./components/layouts/Body/Body";
+
 const App = () => {
   return (
-    <div>
+    <div className="main">
       <Nav />
-      <Body />
+      <div className="body-wrapper">
+        <Banner />
+        <ProductList />
+      </div>
     </div>
   );
 };

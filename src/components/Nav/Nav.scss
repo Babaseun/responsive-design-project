@@ -16,16 +16,20 @@
 }
 
 .brand {
-  margin-left: 1em;
-  font-size: 2rem;
+  margin-left: 1rem;
+  font-size: clamp(2rem, calc(max(2vw, 1rem)), 3rem);
+  font-family: Montserrat;
 }
+
 .nav-cart-button {
   color: $white;
   background: $black;
-  font-size: 1rem;
+  font-size: clamp(2rem, calc(max(2vw, 1rem)), 3rem);
   cursor: pointer;
-  padding: 1rem 3rem;
-  margin-right: 1em;
+  margin-right: 1rem;
+  padding: 1rem 4rem ;
+  font-family: Montserrat;
+  font-style: normal;
 }
 .display-checkout-section {
   display: none;

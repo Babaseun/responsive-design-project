@@ -33,27 +33,17 @@
 .product-item-wrapper::-webkit-scrollbar {
   display: none;
 }
-.product-brand {
-  font-family: Crimson Text;
-  font-size: 30px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 41px;
-  letter-spacing: 0em;
-  text-align: left;
-}
 .product-name {
-  font-family: Crimson Text;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 66px;
-  letter-spacing: 0em;
-  text-align: left;
+  font-size: calc(max(2.5vw, 3rem));
+  margin-bottom: 1em;
 }
+.product-brand {
+  font-size: calc(max(1vw, 1.5rem));
+}
+
 .product-item-up {
   width: 70%;
-  margin: 2em auto;
+  margin: 3em auto;
 }
 
 .add-to-cart-button {
@@ -65,7 +55,7 @@
 .add-to-cart-button,
 .add-to-cart-price {
   padding: 0 1em 1em 1em;
-  font-size: 2rem;
+  font-size: calc(max(1.5vw, 2rem));
 }
 .product-item-down {
   display: flex;
