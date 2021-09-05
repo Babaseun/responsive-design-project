@@ -1,0 +1,24 @@
+.product-list {
+  height: 100%;
+  width: clamp(50px, 90%, 100%);
+  margin: 4em auto;
+  .product-list-item {
+    margin-bottom: 5em;
+  }
+  .spinner {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 60em) {
+  .product-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: 1fr;
+    gap: 2.5em;
+    .product-list-item {
+      margin-bottom: 0em;
+    }
+    
+  }
+}
