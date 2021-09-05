@@ -1,0 +1,29 @@
+.cart-items {
+  padding: 20px 0;
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+
+.cart-item-image {
+  padding-right: 10px;
+}
+
+.cart-item-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 70px;
+}
+.cart-item-delete-button {
+  border: none;
+  font-size: 2rem;
+  background: transparent;
+  cursor: pointer;
+}

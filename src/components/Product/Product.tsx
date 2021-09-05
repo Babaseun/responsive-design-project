@@ -4,7 +4,9 @@ import { addToCart } from "../../actions/actions";
 import { ProductAttributes } from "../../types/types";
 import "./Product.scss";
 
-const Product = (props: ProductAttributes) => {
+interface Props extends ProductAttributes {}
+
+const Product: React.FC<Props> = (props: Props) => {
   const dispatch = useDispatch();
   return (
     <div className="product-container">
@@ -24,18 +26,7 @@ const Product = (props: ProductAttributes) => {
           <div className="product-item-down">
             <button
               className="add-to-cart-button"
-              onClick={() =>
-                dispatch(
-                  addToCart({
-                    itemLink: props.itemLink,
-                    itemName: props.itemName,
-                    vendorProductName: props.vendorProductName,
-                    MSRP: props.MSRP,
-                    _id: props._id,
-                    tradeCurrency: props.tradeCurrency,
-                  })
-                )
-              }
+              onClick={() => dispatch(addToCart({ ...props }))}
             >
               + Add to cart
             </button>

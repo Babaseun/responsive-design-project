@@ -4,9 +4,7 @@ import { Dispatch } from "redux";
 
 export const fetchProducts = () => async (dispatch: Dispatch) => {
   try {
-    const API = `${process.env.REACT_APP_PRODUCT_URL}`;
-
-    const response = await axios.get(API);
+    const response = await axios.get(`${process.env.REACT_APP_PRODUCT_URL}`);
 
     dispatch(processProducts(response.data));
   } catch (error) {

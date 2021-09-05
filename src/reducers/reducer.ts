@@ -1,5 +1,4 @@
-import { ProductAttributes } from "./../types/types";
-import { Action, State } from "../types/types";
+import { Action, ProductAttributes, State } from "../types/types";
 
 const initialState: State = {
   isLoading: true,
@@ -14,7 +13,7 @@ export const productReducer = (state = initialState, action: Action) => {
     case "ADD_PRODUCT_TO_CART":
       return { ...state, cart: [...state.cart, action.payload] };
     case "REMOVE_PRODUCT_FROM_CART":
-      return { ...state, cart: state.cart.filter((item: ProductAttributes) => item._id !== action.payload),};
+      return { ...state, cart: state.cart.filter((item: ProductAttributes) => item._id !== action.payload), };
     default:
       return state;
   }

@@ -5,7 +5,7 @@ import { ProductAttributes, State } from "../../types/types";
 import Product from "../Product/Product";
 import "./ProductList.scss";
 
-const ProductList = () => {
+const ProductList: React.FC = () => {
   const state = useSelector((state: State) => state);
   const dispatch = useDispatch();
   useEffect(() => {

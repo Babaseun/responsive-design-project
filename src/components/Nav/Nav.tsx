@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import CartDetails from "../CartDetails/CartDetails";
+import CartList from "../CartList/CartList";
 
 import "./Nav.scss";
 
@@ -25,7 +25,7 @@ const Nav = () => {
           </button>
         </div>
       </div>
-      <CartDetails displayCheckoutBox={checkOut} />
+      <CartList displayCheckoutBox={checkOut} />
     </div>
   );
 };
