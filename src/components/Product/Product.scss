@@ -54,10 +54,19 @@
 }
 .add-to-cart-button,
 .add-to-cart-price {
-  padding: 0 1em 1em 1em;
-  font-size: calc(max(1.5vw, 1rem));
+  font-size: calc(max(4vw, 1rem));
 }
 .product-item-down {
   display: flex;
   justify-content: space-between;
+  padding: 5rem;
+}
+@media only screen and (min-width: 60em) {
+  .product-item-down {
+    padding: 2rem;
+  }
+  .add-to-cart-button,
+  .add-to-cart-price {
+    font-size: 1rem;
+  }
 }
